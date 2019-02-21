@@ -26,8 +26,9 @@ const reducer = (state = initialState, action) => {
         ...state,
         results: updateArray
       };
+    default:
+      return state;
   }
-  return state;
 };
 
 export default reducer;

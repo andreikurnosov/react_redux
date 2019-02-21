@@ -31,6 +31,11 @@ class Counter extends Component {
           return { counter: prevState.counter - value };
         });
         break;
+      default:
+        this.setState((prevState) => {
+          return { counter: prevState.counter + 1 };
+        });
+        break;
     }
   };
 
